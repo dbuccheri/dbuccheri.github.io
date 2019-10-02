@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+/*font-family: 'Open Sans Condensed', sans-serif;*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Sacramento&display=swap');
+/*font-family: 'Sacramento', cursive;*/
+/*  font-family: 'Raleway', sans-serif;*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin:0px;
+  padding:0px;
+
+}
+header  {
+  border-width: 2px;
+  border-bottom: black;
+  display: grid;
+  height:200px;
+  display:grid;
+  margin-bottom: 10px;
+  justify-items: center;
+}
+
+a:link {
+  color:#8F7035;
+}
+
+h0 {
+    
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #4B4B4B;
+    font-family: 'Raleway', sans-serif;
+    font-style: ;
+    letter-spacing: 2px;
+    font-weight: 400;
+    justify-content: center;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    margin-top:40px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #8F7035;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 1.4;
+    font-style: regular;
+    font-weight: 400;
+   
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin:auto;
+
+    font-size: 1.2em;
+    color: #8F7035;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: regular;
+}
+
+#singleCol{
+  max-width: 1100px;
+  margin:auto;
+}
+
+
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-style: regular;
+  font-size:1em;
+  color:#4B4B4B;
+  line-height: 1.5;
+  letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+
+}
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  border-bottom: 1px solid;
+ /* border-color: #8F7035;*/
+  /*border-top: 1px solid #8F7035;*/
+  top: 0;
+  width: 300px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 25px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 25px;
+}
+
+p.il {
+
+  letter-spacing: 0.5px;
+  margin-bottom: 40px;
+}
+
+.il::first-letter {
+  font-size: 2em;
+
+  line-height: 1.5;
+
+
+}
+
+.gold {
+ color: #8F7035;
+ border-color: #8F7035;
+}  
+
+.white {
+  color: white;
+  border-color:white;
+}  
+
+video {
+  width: 100%;
+}
+
+#logo {
+  width: 300px;
+  transition: all 1s;
+}
+
+#photobooth {
+  width: 100%;
+}
+
+div {
+display: block;
+margin:20px;
+
+}
+
+#container{
+  display: grid;
+  grid-gap: 2vw;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+#container div{
+margin-bottom:0px;
+margin-top:0px;
+}
+
+#cols {
+
+justify-items: center;
+
+}
+/*
+Force the grid to 1 col for mobile devices*/
+@media only screen 
+and (min-device-width : 1px) 
+and (max-device-width : 812px) 
+ { 
+
+  #container{
+    display: grid;
+    grid-gap: 4vw;
+    grid-template-columns:  1fr;
+    
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    grid-auto-flow: ;
+  }
+
+}
+
+@media only screen 
+and (min-device-width : 1px) 
+and (max-device-width : 812px)  
+and (orientation: landscape) 
+ { 
+
+  #container{
+    display: grid;
+    grid-gap: 4vw;
+    grid-template-columns:  1fr 1fr;
+    
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    grid-auto-flow: ;
+  }
+
+
+}
+
+#pastClients{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 1100px;
+
+}
+
+#pastClients img {
+  max-width:170px;
+  padding: 0px;
+  margin:40px;
+  transition: all .5s ease-out;
+}
+
+#pastClients img:hover {
+
+  transform: scale(1.2) ;
+
+
+}
+
+#slideShow{
+  display:block;
+  background-color: #202020;
+  padding-top: 1px;
+  padding-bottom: 50px;
+  padding-left:100px;
+  padding-right:100px;
+  margin:0px;
+
+}
+#slideShow img{
+  margin-top:20px;
+}
+
+
+hr {
+  display: block;
+  height: 1px;
+  color:red;
+  width: 850px;
+  color: #8F7035;
+  margin: auto;
+  justify-content: center;
+}
+
+
+footer div{
+  border-width: 2px;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.icons {
+width: 50px;
+margin:20px;
+transition: all .5s ease-out;
+}
+
+.icons:hover {
+transform: scale(1.2);
+
+}
+
+  
+
